@@ -6,3 +6,17 @@
 h1 , a {
     color: #fdfdfd;
 }
+
+.ml-55 {
+    margin-left: 55%;
+}
+
+.hover-1 {
+  background: 
+    linear-gradient(#1095c1 0 0) no-repeat
+    calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + .08em);
+  transition: .1s calc(var(--i, 0) * .1s), background-position .1s calc(.1s - calc(var(--i, 0) * .1s));
+}
+.hover-1:hover {
+  --i: 1;
+}
